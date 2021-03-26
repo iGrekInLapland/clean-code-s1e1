@@ -10,10 +10,10 @@ body {
   display: block;
   text-align: right;
 }
-.diagram img {
+.diagram__img{
   width: 100%;
 }
-.more-inf {
+.diagram__more-inf {
   font-family: fantasy, cursive;
 }
 
@@ -34,22 +34,22 @@ body {
   display: inline-block;
   flex-grow: 1;
 }
-.box {
+.add-elm__form {
   display: flex;
 }
-ul {
+.list {
   margin: 0;
   padding: 0;
 }
-li, 
+.item, 
 .title {
   list-style: none;
 }
-input,
-button{
+.input,
+.btn{
   outline: none;
 }
-button {
+.btn {
   background: none;
   border: 0;
   color: #888;
@@ -58,7 +58,7 @@ button {
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
-button:hover {
+.btn:hover {
   color: #3a3a3a;
 }
 /* Heading */
@@ -71,7 +71,7 @@ button:hover {
   margin: 0;
   text-transform: uppercase;
 }
-input[type="text"] {
+.input_text {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -83,7 +83,7 @@ input[type="text"] {
   font-family: Lato, sans-serif;
   color: #888;
 }
-input[type="text"]:focus {
+.input_text:focus {
   color: #333;
 }
 
@@ -95,12 +95,12 @@ input[type="text"]:focus {
 #new-task {
   width: 318px;
 }
-p > button:hover {
+.add-elm__btn:hover {
   color: #0fCc7c;
 }
 
 /* Task list */
-li {
+.item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -108,50 +108,50 @@ li {
   justify-content: space-between;
   align-items: center;
 }
-li > * {
+.item > * {
   vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+.input_check {
   margin: 0 10px;
 }
-li > label {
+.item__label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
-li > input[type="text"] {
+.input_text {
   width: 226px;
 }
-.delete:hover {
+.btn_del:hover {
   color: #cf2323;
 }
-.delete img {
+.item__img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-.delete img:hover {
+.item__img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-#done-tasks label {
+#done-tasks .item__label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-ul li input[type=text] {
+.input_text {
   display: none;
 }
 
-.edit-mode input[type=text] {
+.edit-mode .input_text {
   display: inline-block;
-  width: 224px;
+  width: 347.5px;
 }
 
-.edit-mode label {
+.edit-mode .item__label {
   display: none;
 }
